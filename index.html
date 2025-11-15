@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Tutor</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>AI-TUTOR</h1>
+        <nav>
+            <a href="#">Services</a>
+            <a href="#">Plans</a>
+            <a href="#">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INTRO -->
+        <section id="welcome">
+            <h2>Empowering Learners with Smart AI Guidance</h2>
+            <p>Experience “Learn How to Learn” by <i>Sufyan Khalid</i></p>
+        </section>
+
+        <!-- FORM -->
+        <section id="join">
+            <form>
+                <h2 class="title">Join Us</h2>
+
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="field checkbox-group">
+                    <h3>Services</h3>
+                    <label><input type="checkbox" name="service" /> Personalized Learning</label>
+                    <label><input type="checkbox" name="service" /> Adaptive Assessments</label>
+                    <label><input type="checkbox" name="service" /> Predictive Analysis</label>
+                </div>
+
+                <div class="field radio-group">
+                    <h3>Plan Type</h3>
+                    <label><input type="radio" name="plan" /> Weekly</label>
+                    <label><input type="radio" name="plan" /> Monthly</label>
+                    <label><input type="radio" name="plan" /> Yearly</label>
+                </div>
+
+                <div class="field">
+                    <label for="function">Choose Function</label>
+                    <select id="function" name="function">
+                        <option value="humanizer">Humanizer</option>
+                        <option value="AI-detector">AI Detector</option>
+                        <option value="grammar">Grammar Correction</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback"></textarea>
+                </div>
+
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        All Rights Reserved © 2025 — AI-TUTOR
+    </footer>
+
+</body>
+</html>
