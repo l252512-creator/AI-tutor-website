@@ -44,9 +44,3 @@ The design emphasizes clarity, accessibility, and responsiveness:
 - Textarea: Feedback  
 - Submit button with hover effect  
 - Labels + keyboard focus for accessibility
-
----
-
-## Screenshots (To be added)
-Add screenshots inside `assets/`:
-
