@@ -44,3 +44,23 @@ The design emphasizes clarity, accessibility, and responsiveness:
 - Textarea: Feedback  
 - Submit button with hover effect  
 - Labels + keyboard focus for accessibility
+
+##  Screenshots of responsiveness
+  Screen shots are inside the `pics/` folder
+
+##  Validator Proofs 
+  Screen shots of html and css proof are inside the `pics/` folder
+
+## 🌐 Live Demo (GitHub Pages)
+🔗 https://yourusername.github.io/your-repo-name/  
+(Replace with your actual link after deployment)
+
+## 💾 Installation & Usage
+No dependencies or libraries required.
+
+To run locally:
+1. Download the project  
+2. Open `index.html` in any browser  
+
+Everything works with **pure HTML & CSS**.
+
