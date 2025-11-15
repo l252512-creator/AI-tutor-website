@@ -1,0 +1,192 @@
+/* ---------------- GLOBAL PAGE GRID ---------------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+
+
+/* ---------------- HEADER ---------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(194, 38%, 54%);
+  padding: 15px 20px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* CSS-INTERACTION #1 → Animated underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+
+
+/* ---------------- HERO SECTION ---------------- */
+#welcome {
+  background-image: linear-gradient(rgba(0,0,0,0.7)), url("/pics/welcome.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 150px 20px;
+}
+
+#welcome h2 {
+  font-size: 2rem;
+}
+
+
+
+/* ---------------- FORM SECTION ---------------- */
+form {
+  background: hsl(194, 38%, 54%);
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  margin: 20px;
+}
+
+.title {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Field card interaction (hover scale) */
+/* CSS-INTERACTION #2 → Card hover grow */
+.field:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 5px;
+}
+
+/* keyboard focus */
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid black;
+}
+
+
+
+/* Checkbox & Radio Groups */
+.checkbox-group, .radio-group {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+
+
+/* Submit Button */
+#submit {
+  grid-column: 1 / -1;
+  padding: 15px;
+  width: 200px;
+  margin: 0 auto;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* CSS-INTERACTION #3 → Button hover glow */
+#submit:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+
+/* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
+
+/* MOBILE */
+@media (max-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  #submit {
+    width: 100%;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #submit {
+    width: 50%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+  form {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
