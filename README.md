@@ -46,10 +46,10 @@ The design emphasizes clarity, accessibility, and responsiveness:
 - Labels + keyboard focus for accessibility
 
 ##  Screenshots of responsiveness
-  Screen shots are inside the `pics/` folder
+  Screen shots are inside the `assets/` folder
 
 ##  Validator Proofs 
-  Screen shots of html and css proof are inside the `pics/` folder
+  Screen shots of html and css proof are inside the `assets/` folder
 
 ## 🌐 Live Demo (GitHub Pages)
 🔗 https://yourusername.github.io/your-repo-name/  
