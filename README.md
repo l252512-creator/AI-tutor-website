@@ -51,11 +51,10 @@ The design emphasizes clarity, accessibility, and responsiveness:
 ##  Validator Proofs 
   Screen shots of html and css proof are inside the `assets/` folder
 
-## 🌐 Live Demo (GitHub Pages)
-🔗 https://yourusername.github.io/your-repo-name/  
-(Replace with your actual link after deployment)
+## Live Demo (GitHub Pages)
+https://l252512-creator.github.io/AI-tutor-website/
 
-## 💾 Installation & Usage
+## Installation & Usage
 No dependencies or libraries required.
 
 To run locally:
