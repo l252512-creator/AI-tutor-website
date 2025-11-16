@@ -47,7 +47,7 @@ nav a:hover::after {
 
 /* ---------------- HERO SECTION ---------------- */
 #welcome {
-  background-image: linear-gradient(rgba(0,0,0,0.7)), url("/assets/welcome.png");
+  background-image: linear-gradient(rgba(0,0,0,0.7)), url("welcome.png");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -190,4 +190,5 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 
